@@ -39,7 +39,7 @@ func main() {
 		ConnContext:       nil,
 	}
 	service := sidecar.NewService("api.lxtkj.cn")
-	service.AddNode("test-"+uuid.New().String(),8088,"127.0.0.1")
+	service.AddNode("test-"+uuid.New().String(),8088,"127.0.0.1:8088")
 	handler := make(chan error)
 
 	go func() {
