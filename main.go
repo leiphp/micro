@@ -13,7 +13,7 @@ func main() {
 	// create a new service
 	etcdReg := etcd.NewRegistry(registry.Addrs("127.0.0.1:2379"))
 	myService := micro.NewService(
-		micro.Name("go.micro.blog"),
+		micro.Name("gw.100txy.com.blog"),
 		micro.Address(":8001"),
 		micro.Registry(etcdReg),
 	)
