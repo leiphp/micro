@@ -1,0 +1,15 @@
+syntax = "proto3";
+package services;
+option go_package ="../protos";
+
+message BlogRequest {
+    int32 id = 1;
+}
+
+message BlogResponse {
+    string data=1;
+}
+
+service BlogService {
+    rpc Detail(BlogRequest) returns(BlogResponse);
+}
